@@ -18,17 +18,24 @@ body, html {
 
 .intro {
   text-align: center;
-  margin-top: 180px;  /* Adds space above the intro section */
+  margin-top: 180px;  
 }
 
 .education {
   position: absolute;
-  top: 300px; /* This stays the same, because we add margin-top to body */
-  left: 10%;
+  top: 350px; 
+  left: 20%;
+}
+
+
+.uni{
+  position: absolute;
+  top: 350px; 
+  left: 50%;
 }
 
 .contact {
   position: absolute;
-  top: 600px; /* This stays the same, because we add margin-top to body */
+  top: 600px; 
   left: 10%;
 }
