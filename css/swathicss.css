@@ -7,11 +7,21 @@ body, html {
 
 .profile-image {
   position: absolute;
-  top: 0; /* This stays the same, because we add margin-top to body */
+  top: 20px; /* This stays the same, because we add margin-top to body */
   left: 50%;
   transform: translateX(-50%);
   width: 150px; /* Profile picture size */
   height: 150px;
   border-radius: 50%; /* Makes it round */
   object-fit: cover;
+}
+
+.intro {
+  position: absolute;
+  top: 180px; /* Position below the profile image */
+  left: 50%;
+  transform: translateX(-50%); /* Center horizontally */
+  width: 80%; /* Adjust width as needed */
+  text-align: center; /* Center text inside the div */
+  margin-top: 20px; /* Adds space between the profile image and the intro section */
 }
