@@ -18,7 +18,15 @@ body, html {
 
 .intro {
   position: relative;
-  top: 90px;  /* Moves the intro div 90px down from its normal position */
+  top: 200px;  /* Moves the intro div 90px down from its normal position */
   text-align: center; /* Center text inside the div */
   margin-top: 20px; /* Adds space above the intro div */
+}
+
+.education {
+  position: relative;
+  top: 500px;  /* Moves the intro div 90px down from its normal position */
+  margin-top: 20px; /* Adds space above the intro div */
+  left: 50px;
+
 }
