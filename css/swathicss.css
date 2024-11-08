@@ -3,6 +3,9 @@ body, html {
   font-family: "Host Grotesk", sans-serif !important;
   font-optical-sizing: auto;
   font-style: normal;
+  height: 100%;
+  margin: 20px;
+  position: relative;
 }
 
 .profile-image {
