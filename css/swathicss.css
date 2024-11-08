@@ -26,3 +26,9 @@ body, html {
   top: 300px; /* This stays the same, because we add margin-top to body */
   left: 10%;
 }
+
+.contact {
+  position: absolute;
+  top: 600px; /* This stays the same, because we add margin-top to body */
+  left: 10%;
+}
