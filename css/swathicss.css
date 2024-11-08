@@ -18,11 +18,11 @@ body, html {
 
 .intro {
   text-align: center;
-  margin-top: 200px;  /* Adds space above the intro section */
+  margin-top: 175px;  /* Adds space above the intro section */
 }
 
 .education {
   position: absolute;
-  top: 500px; /* This stays the same, because we add margin-top to body */
+  top: 300px; /* This stays the same, because we add margin-top to body */
   left: 10%;
 }
