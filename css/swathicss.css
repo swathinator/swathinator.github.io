@@ -17,16 +17,11 @@ body, html {
 }
 
 .intro {
-  position: relative;
-  top: 200px;  /* Moves the intro div 90px down from its normal position */
-  text-align: center; /* Center text inside the div */
-  margin-top: 20px; /* Adds space above the intro div */
+  text-align: center;
+  margin-top: 200px;  /* Adds space above the intro section */
 }
 
 .education {
-  position: relative;
-  top: 500px;  /* Moves the intro div 90px down from its normal position */
-  margin-top: 20px; /* Adds space above the intro div */
-  left: 50px;
-
+  margin-top: 500px;  /* Adds space above the education section */
+  left: 50px;  /* Moves the education div to the right */
 }
