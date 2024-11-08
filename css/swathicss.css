@@ -3,20 +3,12 @@ body, html {
   font-family: "Host Grotesk", sans-serif !important;
   font-optical-sizing: auto;
   font-style: normal;
-  height: 100%;
-  margin: 0;
-  position: relative;
-
 }
 
 .profile-image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); /* Centers the image */
-  width: 150px; /* Profile picture size */
-  height: 150px;
-  border-radius: 50%; /* Makes it round */
+  width: 150px; /* Set the width for the profile picture */
+  height: 150px; /* Set the height to keep it round */
+  border-radius: 50%; /* Makes it round like a profile picture */
   object-fit: cover; /* Ensures the image doesn't stretch */
 }
 .image-container {
