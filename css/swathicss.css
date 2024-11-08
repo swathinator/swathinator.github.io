@@ -1,7 +1,8 @@
 body {
-  background-color: #949392;
-  font-family: "Faculty Glyphic", sans-serif !important;
-  font-weight: 400;
+  background-color: #f2f0ef;
+  font-family: "Host Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
   font-style: normal;
 }
 
