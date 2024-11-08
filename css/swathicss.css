@@ -1,6 +1,6 @@
 body {
   background-color: #f2f0ef;
-  font-family: "Host Grotesk", sans-serif;
+  font-family: "Host Grotesk", sans-serif !important;
   font-optical-sizing: auto;
   font-weight: <weight>;
   font-style: normal;
