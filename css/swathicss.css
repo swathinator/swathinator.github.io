@@ -19,5 +19,6 @@ body, html {
 .intro {
   text-align: center; /* Center text inside the div */
   margin-top: 20px; 
-  top: 70px;
+  position: relative;
+  top: 90px;
 }
