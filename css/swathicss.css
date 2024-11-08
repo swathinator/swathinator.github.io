@@ -17,11 +17,6 @@ body, html {
 }
 
 .intro {
-  position: absolute;
-  top: 180px; /* Position below the profile image */
-  left: 50%;
-  transform: translateX(-50%); /* Center horizontally */
-  width: 80%; /* Adjust width as needed */
   text-align: center; /* Center text inside the div */
-  margin-top: 20px; /* Adds space between the profile image and the intro section */
+  margin-top: 20px; 
 }
