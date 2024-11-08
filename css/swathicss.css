@@ -22,6 +22,7 @@ body, html {
 }
 
 .education {
-  margin-top: 500px;  /* Adds space above the education section */
-  left: 50px;  /* Moves the education div to the right */
+  position: absolute;
+  top: 500px; /* This stays the same, because we add margin-top to body */
+  left: 10%;
 }
