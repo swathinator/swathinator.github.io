@@ -40,7 +40,7 @@ body, html {
   left: 10%;
 }
 .collapsible {
-  background-color: #797877;
+  background-color: #181817;
   color: white;
   cursor: pointer;
   padding: 18px;
@@ -55,7 +55,7 @@ body, html {
 }
 
 .active, .collapsible:hover {
-  background-color: #181817;
+  background-color: #797877;
 }
 
 .collapsible:after {
@@ -79,7 +79,7 @@ body, html {
 }
 .time{
   position: absolute;
-  top: 350px; 
+  top: 500px; 
   left: 20%;
 
 }
