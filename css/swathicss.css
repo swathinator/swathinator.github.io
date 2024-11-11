@@ -22,20 +22,20 @@ body, html {
 }
 
 .education {
-  position: absolute;
+  position: fixed;
   top: 350px; 
   left: 30%;
 }
 
 
 .uni{
-  position: absolute;
+  position: fixed;
   top: 350px; 
   left: 50%;
 }
 
 .contact {
-  position: absolute;
+  position: fixed;
   top: 600px; 
   left: 10%;
 }
