@@ -22,20 +22,20 @@ body, html {
 }
 
 .education {
-  position: fixed;
+  position: absolute;
   top: 350px; 
   left: 30%;
 }
 
 
 .uni{
-  position: fixed;
+  position: absolute;
   top: 350px; 
   left: 50%;
 }
 
 .contact {
-  position: fixed;
+  position: absolute;
   top: 600px; 
   left: 10%;
 }
@@ -78,8 +78,8 @@ body, html {
   background-color: #f1f1f1;
 }
 .time{
-  position: fixed;
+  position: absolute;
   top: 350px; 
-  left: 30%;
+  left: 20%;
 
 }
