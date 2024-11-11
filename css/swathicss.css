@@ -36,8 +36,11 @@ body, html {
 
 .contact {
   position: absolute;
-  top: 600px; 
-  left: 10%;
+  top: 900px; 
+  background: #797877;
+  padding: 5%;
+  width: 100%;
+  color: white;
 }
 .collapsible {
   background-color: #181817;
