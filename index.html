@@ -56,7 +56,23 @@
 					</p>
 	</div>
 	 
-
+<p>Here's the time I...</p>
+<button class="collapsible">Was featured in Zack Allen’s Detection Engineering Weekly</button>
+<div class="content">
+  <p>My article, “Improving Windows Logging Visibility in Elastic,” was featured in issue #83 of Detection Engineering Weekly, a newsletter by Zack Allen that highlights developments in Detection Engineering. In the article, I explain how to implement Sysmon to enhance logging visibility within Elastic. I also illustrate how default telemetry often leaves out basic details and how Sysmon can create a more comprehensive view of system activities.</p>
+</div>
+<button class="collapsible">Administered a Keylogger attack and detected it in my home lab</button>
+<div class="content">
+  <p>Keyloggers are a great way to capture sensitive details and provide valuable insights on user behavior. In my Medium article, I explain the steps of deploying a dropper script to download a keylogger, capturing keystrokes, and using an exfiltration script to send captured data to an FTP server. I also cover persistence techniques and conclude with detection methods to identify these activities.</p>
+</div>
+<button class="collapsible">Got an Atomic Red Team test accepted</button>
+<div class="content">
+  <p>Atomic Red Team is an open-source library of scripted attack techniques designed to simulate real-world adversary behaviors based on the MITRE ATT&CK framework. I chose to test technique T1219 - Remote Access Software, by writing a PowerShell command to silently download and install RustDesk, an open-source remote desktop application. (My main motivator being the cool t-shirt!!)</p>
+</div>
+<button class="collapsible">Hacked my own Google account </button>
+<div class="content">
+  <p>In late 2023, Okta experienced a breach in which a malicious actor accessed files for 134 customers by stealing credentials stored on an employee's work laptop. The employee's use of Chrome's password manager, which saves passwords locally and can be easily decrypted, allowed the attacker to gain unauthorized access. Inspired by this incident, I decided to test the attack on my own account by using an open-source Python script to decrypt and display saved credentials in clear text.</p>
+</div>
 
 
 	
@@ -77,6 +93,21 @@
 						<a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
 					</p>
 	 </div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</script>
   </body>
 </html>

@@ -39,3 +39,40 @@ body, html {
   top: 600px; 
   left: 10%;
 }
+.collapsible {
+  background-color: #797877;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-family: "Host Grotesk", sans-serif !important;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.active, .collapsible:hover {
+  background-color: #181817;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
