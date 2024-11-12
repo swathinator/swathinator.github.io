@@ -36,7 +36,7 @@ body, html {
 
 .contact {
   position: absolute;
-  top: 9000px; 
+  top: 5000px; 
   background: #797877;
   padding: 5%;
   width: 100%;
@@ -83,6 +83,7 @@ body, html {
 .time{
   position: absolute;
   top: 500px; 
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 
 }
