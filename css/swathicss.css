@@ -6,7 +6,7 @@ body, html {
 }
 
 .profile-image {
-  position: absolute;
+  position: relative;
   top: 20px; /* This stays the same, because we add margin-top to body */
   left: 50%;
   transform: translateX(-50%);
@@ -17,30 +17,37 @@ body, html {
 }
 
 .intro {
+  position: relative;
   text-align: center;
-  margin-top: 180px;  
+  margin-top: 0px;  
+  display: flex;
+  flex-direction: column; /* Or row, if you want a horizontal layout */
+  align-items: center;
 }
 
 .education {
   position: absolute;
-  top: 350px; 
-  left: 30%;
+  top: 60%; 
+  left: 20%;
 }
 
 
 .uni{
   position: absolute;
-  top: 350px; 
+  top: 60%; 
   left: 50%;
 }
 
 .contact {
-  position: absolute;
-  top: 5000px; 
+  position: relative;
+  top: 1000px; 
   background: #797877;
   padding: 5%;
   width: 100%;
   color: white;
+  
+
+
 }
 .collapsible {
   background-color: #181817;
@@ -81,7 +88,12 @@ body, html {
   background-color: #f1f1f1;
 }
 .time{
-  position: absolute;
-  top: 500px; 
-  left:20%;
+  position: relative;
+  top: 200px;
+  display: flex;
+  flex-direction: column; /* Or row, if you want a horizontal layout */
+  text-align: left;
+  align-items: center;
+  
+
 }
