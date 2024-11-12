@@ -83,7 +83,5 @@ body, html {
 .time{
   position: absolute;
   top: 500px; 
-  margin-left: auto;
-  margin-right: auto;
-
+  text-align:center;
 }
