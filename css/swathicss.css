@@ -3,6 +3,7 @@ body, html {
   font-family: "Host Grotesk", sans-serif !important;
   font-optical-sizing: auto;
   font-style: normal;
+  margin: 0;
 }
 
 .profile-image {
@@ -42,9 +43,9 @@ body, html {
 
 .contact {
   position: relative;
-  top: 1000px; 
   background: #797877;
   padding: 5%;
+  margin-top: 5%;
   width: 100%;
   color: white;
 }
