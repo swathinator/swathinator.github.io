@@ -1,112 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">	
 
-    <link rel="shortcut icon" href="favicon.ico">
-    <link rel="apple-touch-icon" href="icon.png" />
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<!-- EDIT: title -->
-    <title>Swathi's Website</title>
-    <!-- Link the main.css stylesheet -->
-    <link href="css/swathicss.css" rel="stylesheet">
-   
-    <!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="icon.png" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<!-- EDIT: title -->
+	<title>Swathi's Website</title>
+	<!-- Link the main.css stylesheet -->
+	<link href="css/swathicss.css" rel="stylesheet">
 
-  </head>
+	<!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
 
-  <body>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+		rel="stylesheet">
+
+</head>
+
+<body>
 
 	<!-- prof pic -->
-					<img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/selfie.jpg" alt="My Selfie" class="profile-image">
+	<img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/selfie.jpg" alt="My Selfie"
+		class="profile-image">
 
 
 	<!-- intro -->
- <div class="intro">
-					<!-- name -->
-					<h1>Swathi Tadepalli</h1>
-					<!-- title | email -->
-					<h3>Cybersecurity Professional | <a href="mailto:swatadepalli@gmail.com" target="_blank">swatadepalli@gmail.com</a></h3>
+	<div class="intro">
+		<!-- name -->
+		<h1>Swathi Tadepalli</h1>
+		<!-- title | email -->
+		
+		<h3>Cybersecurity Professional | <a href="mailto:swatadepalli@gmail.com"
+				target="_blank">swatadepalli@gmail.com</a></h3>
 
-					<!-- about -->
-					<p>Woman in tech with a passion for Cybersecurity!</p>
-					<!-- resume -->
-					<p><a href="Swathi Tadepalli.pdf" target="_blank"><i class="icon-file"></i> <sm> Resume</sm></a></p>
-	</div> 
-
-
- <div class="education">
-
-					<h5>EDUCATION</h5>
-</div>
-
-				<!-- EDIT: education line 1 -->
-	<div class="uni">
-					<p><t>Bachelor's in Information Systems</t><br/>
-						University of Maryland, Baltimore County
-					</p>
-					<p><t>Master's in Cybersecurity</t><br/>
-						University of Maryland, Baltimore County
-					</p>
+		<!-- about -->
+		<p>Woman in tech with a passion for Cybersecurity!</p>
+		<!-- resume -->
+		<p><a href="Swathi Tadepalli.pdf" target="_blank"><i class="icon-file"></i>
+				<sm> Resume</sm>
+			</a></p>
 	</div>
-<div class="time">	 
-<h3>Here's the time I...</h3>
-<button class="collapsible">Was featured in Zack Allen’s Detection Engineering Weekly</button>
-<div class="content">
-  <p>My article, “Improving Windows Logging Visibility in Elastic,” was featured in issue #83 of Detection Engineering Weekly, a newsletter by Zack Allen that highlights developments in Detection Engineering. In the article, I explain how to implement Sysmon to enhance logging visibility within Elastic. I also illustrate how default telemetry often leaves out basic details and how Sysmon can create a more comprehensive view of system activities.</p>
-</div>
-<button class="collapsible">Administered a Keylogger attack and detected it in my home lab</button>
-<div class="content">
-  <p>Keyloggers are a great way to capture sensitive details and provide valuable insights on user behavior. In my Medium article, I explain the steps of deploying a dropper script to download a keylogger, capturing keystrokes, and using an exfiltration script to send captured data to an FTP server. I also cover persistence techniques and conclude with detection methods to identify these activities.</p>
-</div>
-<button class="collapsible">Got an Atomic Red Team test accepted</button>
-<div class="content">
-  <p>Atomic Red Team is an open-source library of scripted attack techniques designed to simulate real-world adversary behaviors based on the MITRE ATT&CK framework. I chose to test technique T1219 - Remote Access Software, by writing a PowerShell command to silently download and install RustDesk, an open-source remote desktop application. (My main motivator being the cool t-shirt!!)</p>
-</div>
-<button class="collapsible">Hacked my own Google account </button>
-<div class="content">
-  <p>In late 2023, Okta experienced a breach in which a malicious actor accessed files for 134 customers by stealing credentials stored on an employee's work laptop. The employee's use of Chrome's password manager, which saves passwords locally and can be easily decrypted, allowed the attacker to gain unauthorized access. Inspired by this incident, I decided to test the attack on my own account by using an open-source Python script to decrypt and display saved credentials in clear text.</p>
-</div>
-</div>
+	<div class="row">
 
-	
+		<div class="col">
+			<h5>EDUCATION</h5>
+		</div>
+
+		<!-- EDIT: education line 1 -->
+		<div class="col">
+			<p>
+				<t>Bachelor's in Information Systems</t><br />
+				University of Maryland, Baltimore County
+			</p>
+			<p>
+				<t>Master's in Cybersecurity</t><br />
+				University of Maryland, Baltimore County
+			</p>
+		</div>
+	</div>
+
+	<div class="time">
+		<h3>Here's the time I...</h3>
+		<button class="collapsible">Was featured in Zack Allen’s Detection Engineering Weekly</button>
+		<div class="content">
+			<p>My article, “Improving Windows Logging Visibility in Elastic,” was featured in issue #83 of Detection
+				Engineering Weekly, a newsletter by Zack Allen that highlights developments in Detection Engineering. In
+				the article, I explain how to implement Sysmon to enhance logging visibility within Elastic. I also
+				illustrate how default telemetry often leaves out basic details and how Sysmon can create a more
+				comprehensive view of system activities.</p>
+		</div>
+		<button class="collapsible">Administered a Keylogger attack and detected it in my home lab</button>
+		<div class="content">
+			<p>Keyloggers are a great way to capture sensitive details and provide valuable insights on user behavior.
+				In my Medium article, I explain the steps of deploying a dropper script to download a keylogger,
+				capturing keystrokes, and using an exfiltration script to send captured data to an FTP server. I also
+				cover persistence techniques and conclude with detection methods to identify these activities.</p>
+		</div>
+		<button class="collapsible">Got an Atomic Red Team test accepted</button>
+		<div class="content">
+			<p>Atomic Red Team is an open-source library of scripted attack techniques designed to simulate real-world
+				adversary behaviors based on the MITRE ATT&CK framework. I chose to test technique T1219 - Remote Access
+				Software, by writing a PowerShell command to silently download and install RustDesk, an open-source
+				remote desktop application. (My main motivator being the cool t-shirt!!)</p>
+		</div>
+		<button class="collapsible">Hacked my own Google account </button>
+		<div class="content">
+			<p>In late 2023, Okta experienced a breach in which a malicious actor accessed files for 134 customers by
+				stealing credentials stored on an employee's work laptop. The employee's use of Chrome's password
+				manager, which saves passwords locally and can be easily decrypted, allowed the attacker to gain
+				unauthorized access. Inspired by this incident, I decided to test the attack on my own account by using
+				an open-source Python script to decrypt and display saved credentials in clear text.</p>
+		</div>
+	</div>
+
+
 	<!--FOOTER DESCRIPTION -->
- <div class="contact">
+	<div class="contact">
 
-					<h5>CONTACT</h5>
-				<!-- EDIT: email -->
-					<p><t>Email</t><br/>
-						<a href="mailto: swatadepalli@gmail.com" target="_blank" class="mail">swatadepalli@gmail.com</a> <br/>
-					</p>
-				
-					<p><sm>SOCIAL LINKS</sm></p>
-					<p>
-						<!-- EDIT: Social Links. Replace # with your URL for each -->
-						<a href="#" target="_blank"><i class="fa-brands fa-medium"></i></a>
-						<a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
-						<a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-					</p>
-	 </div>
-<script>
-var coll = document.getElementsByClassName("collapsible");
-var i;
+		<h5>CONTACT</h5>
+		<!-- EDIT: email -->
+		<p>
+			<t>Email</t><br />
+			<a href="mailto: swatadepalli@gmail.com" target="_blank" class="mail">swatadepalli@gmail.com</a> <br />
+		</p>
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-</script>
-  </body>
+		<p>
+			<sm>SOCIAL LINKS</sm>
+		</p>
+		<p>
+			<!-- EDIT: Social Links. Replace # with your URL for each -->
+			<a href="#" target="_blank"><i class="fa-brands fa-medium"></i></a>
+			<a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+			<a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+		</p>
+	</div>
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.maxHeight) {
+					content.style.maxHeight = null;
+				} else {
+					content.style.maxHeight = content.scrollHeight + "px";
+				}
+			});
+		}
+	</script>
+</body>
+
 </html>
