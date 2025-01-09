@@ -25,8 +25,8 @@ body, html {
 .chrome,
 .keylogger,
 .atomicredteam {
-  width: 300px;
-  height: auto;
+  width: 300px !important;
+  height: auto !important;
   display: inline-block; /* Ensure proper alignment */
 }
 
