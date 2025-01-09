@@ -3,6 +3,7 @@ body, html {
   font-family: "Host Grotesk", sans-serif !important;
   font-optical-sizing: auto;
   font-style: normal;
+  margin: 0;
 }
 
 .profile-image {
@@ -17,7 +18,7 @@ body, html {
 }
 
 .intro {
-  position: relative;
+  position: center;
   text-align: center;
   margin-top: 0px;  
   display: flex;
@@ -25,30 +26,30 @@ body, html {
   align-items: center;
 }
 
-.education {
-  position: absolute;
-  top: 60%; 
-  left: 20%;
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-
-.uni{
-  position: absolute;
-  top: 60%; 
-  left: 50%;
+.col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  align-items: center;
 }
 
 .contact {
   position: relative;
-  top: 1000px; 
   background: #797877;
   padding: 5%;
+  margin-top: 5%;
   width: 100%;
   color: white;
-  
-
-
 }
+
 .collapsible {
   background-color: #181817;
   color: white;
@@ -87,14 +88,10 @@ body, html {
   transition: max-height 0.2s ease-out;
   background-color: #f1f1f1;
 }
+
 .time{
-  position: relative;
-  top: 200px;
-  width: 1000px;
   display: flex;
   flex-direction: column; /* Or row, if you want a horizontal layout */
   text-align: left;
   align-items: center;
-  
-
 }
