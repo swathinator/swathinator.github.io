@@ -17,29 +17,19 @@ body, html {
   object-fit: cover;
 }
 
-.deteng {
-  width: 300px;
-  height: auto;
-}
-
-.chrome {
-  width: 300px;
-  height: auto; 
-}
-
-.keylogger {
-  width: 300px;
-  height: auto; 
-}
-
-.atomicredteam {
-  width: 300px;
-  height: auto;
-}
-
 .accordianimage {
   text-align: center;
 }
+
+.deteng,
+.chrome,
+.keylogger,
+.atomicredteam {
+  width: 300px;
+  height: auto;
+  display: inline-block; /* Ensure proper alignment */
+}
+
 
 .intro {
   position: center;
