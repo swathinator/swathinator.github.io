@@ -16,37 +16,31 @@ body, html {
   border-radius: 50%; /* Makes it round */
   object-fit: cover;
 }
-/* .deteng {
+
+.deteng {
   width: 300px;
   height: auto;
-  text-align: center;
-
 }
+
 .chrome {
   width: 300px;
   height: auto; 
-  text-align: center;
-
 }
+
 .keylogger {
   width: 300px;
   height: auto; 
-  text-align: center;
-
 }
+
 .atomicredteam {
   width: 300px;
   height: auto;
-  text-align: center;
-
 }
-*/
+
 .accordianimage {
-  width: 300px;
-  height: auto;
   text-align: center;
-
 }
+
 .intro {
   position: center;
   text-align: center;
