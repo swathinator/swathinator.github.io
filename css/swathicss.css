@@ -6,20 +6,21 @@ body, html {
   margin: 0;
 }
 .moon{
+position: absolute;
 width: 50px;
 height: 50px;
+left: 120px;
 }
 .sun{
 width: 50px;
 height: 50px;
 }
 .switch {
-  position: relative;
-  display: inline-block;
+  position: absolute;
   width: 60px;
   height: 34px;
+  top: 75px;
 }
-
 .switch input { 
   opacity: 0;
   width: 0;
