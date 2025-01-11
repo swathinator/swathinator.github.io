@@ -7,21 +7,21 @@ body, html {
 }
 .mode {
   position: relative; 
-  width: 155px;
-  height: 55px;
+  width: 120px;
+  height: 45px;
   background-color: white;
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 15px;
-  display: flex; /* Use flexbox to align items if desired */
-  align-items: center; /* Vertical alignment */
-  justify-content: space-between; /* Space between elements */
-  left: 20px;
+  display: flex; 
+  align-items: center;
+  justify-content: space-between; 
+  left: 30%;
   top: 20px;
 }
 
 .sun, .moon {
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
 }
 
 .switch {
