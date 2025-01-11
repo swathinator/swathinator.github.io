@@ -33,7 +33,7 @@ height: 50px;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: black;
+  background-color: #F3E5AB;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -51,7 +51,7 @@ height: 50px;
 }
 
 input:checked + .slider {
-  background-color:#F3E5AB;
+  background-color: black;
 }
 
 
