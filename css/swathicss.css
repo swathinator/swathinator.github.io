@@ -15,7 +15,7 @@ body, html {
   display: flex; 
   align-items: center;
   justify-content: space-between; 
-  left: 30%;
+  left: 20%;
   top: 20px;
   margin: 20px;
 }
