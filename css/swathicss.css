@@ -144,6 +144,14 @@ input:checked + .slider:before {
   color: white;  
   margin-top: 5%;
 }
+.linkedin, .github, .medium{
+  width: 30px;
+  height: 30px;
+}
+
+.links{
+  text-decoration: none; 
+}
 
 .collapsible {
   background-color: #181817;
