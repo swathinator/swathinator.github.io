@@ -197,5 +197,5 @@ input:checked + .slider:before {
   flex-direction: column; /* Or row, if you want a horizontal layout */
   text-align: left;
   align-items: center;
-  max-width: 1000px;
+  
 }
