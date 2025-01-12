@@ -139,7 +139,7 @@ input:checked + .slider:before {
 .contact {
   width: 100%;               
   background: #797877;       
-  padding: 70px;             
+  padding: 40px;             
   box-sizing: border-box;    
   color: white;  
   margin-top: 5%;
@@ -188,7 +188,7 @@ input:checked + .slider:before {
   max-height: 0;
   width: 71%;
   overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  transition: max-height 0.4s ease-out;
   background-color: #f1f1f1;
 }
 
