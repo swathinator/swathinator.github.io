@@ -183,7 +183,7 @@ input:checked + .slider:before {
   content: "\2212";
 }
 
-.content {
+.story {
   padding: 0 18px;
   max-height: 0;
   width: 71%;
@@ -196,6 +196,18 @@ input:checked + .slider:before {
   display: flex;
   flex-direction: column; /* Or row, if you want a horizontal layout */
   text-align: left;
-  align-items: center;
-  
+  align-items: center; 
 }
+
+.biodata {
+  max-width: 850px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Or row, if you want a horizontal layout */
+  text-align: left;
+  align-items: center; 
+  width: 100%;
+}
+
