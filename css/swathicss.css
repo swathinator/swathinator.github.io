@@ -44,6 +44,10 @@ body.dark-theme .collapsible:hover {
 body.dark-theme a {
   color: #78c0ff;
 } 
+body.dark-theme .history,
+body.dark-theme .education {
+  background-color: #3b3b3b;
+}
 
 h5,
 p {
@@ -51,8 +55,8 @@ p {
 }
 
 .theme-toggle {
-  position: absolute; /* Changed from fixed to absolute */
-  top: 20px;
+  position: absolute;
+  bottom: 20px;
   right: 20px;
   width: 30px;
   height: 30px;
@@ -77,7 +81,7 @@ p {
 .sun, .moon {
   width: 20px;
   height: 20px;
-  margin: 0 5px; /* Adjust the margin to move them closer to the switch */
+  margin: 0 5px;
 }
 
 .switch {
@@ -213,7 +217,7 @@ input:checked + .slider:before {
   color: white;
   cursor: pointer;
   padding: 18px;
-  width: 75%;
+  width: 84%;
   border: none;
   text-align: left;
   outline: none;
@@ -272,4 +276,43 @@ input:checked + .slider:before {
 
 .right {
   text-align: right;
+}
+
+.date {
+  float: left;
+  text-align: right;
+  width: 50%;
+  margin: 0px; 
+
+}
+.company{
+  margin: 0px; 
+}
+.role {
+  float: left;
+  width: 50%;
+  margin: 0px; 
+
+}
+
+.experience {
+  margin: 0 auto; /* Center the div horizontally */
+  text-align: center; /* Center the text inside the div */
+  margin: 0px; 
+
+}
+
+.history {
+  width: 650px;
+  margin: 0 auto; /* Center the div horizontally */
+  background-color:#e4e4e4;
+  padding: 30px;
+}
+.education {
+  width: 600px;
+  margin: 0 auto; /* Center the div horizontally */
+  background-color:#e4e4e4;
+  padding: 20px;
+  padding-left: 55px;
+  padding-right: 55px;
 }

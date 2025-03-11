@@ -18,23 +18,14 @@
 
   <body>
     <div class="content">
-      <div class="mode">
-        <img
-          src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1269.PNG"
-          class="sun"
-        />
-        <label class="switch">
-          <input type="checkbox" id="theme-toggle" />
-          <span class="slider round"></span>
-        </label>
-        <img
-          src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1268.PNG"
-          class="moon"
-        />
-      </div>
-	  <div class="theme-toggle">
-		<img id="theme-icon" src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1269.PNG" alt="Toggle Theme" />
-	  </div>
+		<div class="mode">
+			<img id="sun-icon" src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1269.PNG" class="sun" />
+			<label class="switch">
+			  <input type="checkbox" id="theme-toggle" />
+			  <span class="slider round"></span>
+			</label>
+			<img id="moon-icon" src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1268.PNG" class="moon" />
+		  </div>
       <div class="biodata">
         <img
           src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/selfie.jpg"
@@ -42,7 +33,7 @@
           class="profile-image"
         />
         <div class="intro">
-          <h1>Swathi Tadepalli</h1>
+          <h1>✨ Swathi Tadepalli ✨</h1>
           <h3>
             Cybersecurity Professional |
             <a href="mailto:swatadepalli@gmail.com" target="_blank"
@@ -58,21 +49,59 @@
             </a>
           </p>
         </div>
-        <div class="row">
-          <div class="col right">
-            <h5>EDUCATION</h5>
-          </div>
-          <div class="col">
-            <p>
-              <t>Bachelor's in Information Systems</t><br />
-              University of Maryland, Baltimore County
-            </p>
-            <p>
-              <t>Master's in Cybersecurity</t><br />
-              University of Maryland, Baltimore County
-            </p>
-          </div>
-        </div>
+		<div class="history">	  
+			<h3 class="experience">💻 <u>Experience</u> 💻</h3>
+			<h3 class="company">Amtrak</h3>
+			  <h4 class="role">Cybersecurity Analyst</h4>
+			  <h4 class="date">September 2023 - May 2024</h4>
+			<ul>
+			  <li>
+				Designed and tuned detections with KQL and Sigma, 
+				analyzed security logs for threats, helped implement a 
+				cybersecurity mesh architecture with Zero Trust, and supported 
+				threat intelligence with OSINT and access management.
+			  </li>
+			</ul>  
+			<h3 class="company">IRS</h3>
+			  <h4 class="role">IT Specialist</h4>
+			  <h4 class="date">January 2021 - November 2021</h4>
+			<ul>  
+			  <li>
+				Conducted data mining with SAS, built .NET applications, 
+				ran SQL queries in TOAD to spot discrepancies, and reviewed 
+				IT tax project specs for accuracy.
+			  </li>
+			</ul>  
+			<h3 class="company">GSA</h3>
+			  <h4 class="role">Chief Privacy Office Intern</h4>
+			  <h4 class="date">June 2019 - August 2019</h4>
+			<ul>  
+			  <li>
+				Reviewed privacy assessments, ensured GSA website compliance,
+				 analyzed web traffic with Google Analytics, 
+				 and edited public-use forms with Google App Script.
+			  </li>
+			</ul>
+		</div>
+	</br>
+		<div class="education">
+			<h3 class="experience">📚 <u>Education</u> 📚</h3>
+		</br>
+			  <h4 class="role"> University of Maryland, Baltimore County</h4>
+			  <h4 class="date">December 2019</h4>
+			<ul>
+			  <p>
+				Bachelor's in Information Systems
+			  </p>
+			</ul>  
+			<h4 class="role"> University of Maryland, Baltimore County</h4>
+			<h4 class="date">August 2024</h4>
+		  <ul>
+			<p>
+			  Master's in Cybersecurity
+			</p>
+		  </ul>   
+		  </div>
         <div class="time">
           <h3>Here's the time I...</h3>
           <button class="collapsible">
@@ -212,65 +241,71 @@
           />
         </a>
       </div>
+      <div class="theme-toggle">
+        <img id="theme-icon" src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1269.PNG" alt="Toggle Theme" />
+      </div>
     </div>
     <script>
-      // Theme based on time of day
-      function setThemeBasedOnTime() {
-        var hour = new Date().getHours();
-        var themeToggle = document.getElementById("theme-toggle");
-        if (hour >= 6 && hour < 18) {
-          document.body.classList.add("light-theme");
-          document.body.classList.remove("dark-theme");
-          themeToggle.checked = false; // Set switch to light theme
-        } else {
-          document.body.classList.add("dark-theme");
-          document.body.classList.remove("light-theme");
-          themeToggle.checked = true; // Set switch to dark theme
-        }
-      }
+      document.addEventListener('DOMContentLoaded', function() {
+  const themeToggle = document.getElementById('theme-toggle');
+  const sunIcon = document.getElementById('sun-icon');
+  const moonIcon = document.getElementById('moon-icon');
+  const themeIcon = document.getElementById('theme-icon');
 
-      // Toggle theme manually
-      document
-        .getElementById("theme-toggle")
-        .addEventListener("change", function () {
-          if (this.checked) {
-            document.body.classList.add("dark-theme");
-            document.body.classList.remove("light-theme");
-          } else {
-            document.body.classList.add("light-theme");
-            document.body.classList.remove("dark-theme");
-          }
-        });
+  function updateIcons() {
+    if (document.body.classList.contains('dark-theme')) {
+      sunIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/sunwhite.png"; // White sun icon for dark mode
+      moonIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/moonwhite.png"; // White moon icon for dark mode
+      themeIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1268.PNG"; // Moon image for dark mode
+    } else {
+      sunIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1269.PNG"; // Black sun icon for light mode
+      moonIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1268.PNG"; // Black moon icon for light mode
+      themeIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1269.PNG"; // Sun image for light mode
+    }
+  }
 
-      // Call the function to set the theme
-      setThemeBasedOnTime();
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
+  // Initial icon update based on the current theme
+  updateIcons();
 
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.maxHeight) {
-            content.style.maxHeight = null;
-          } else {
-            content.style.maxHeight = content.scrollHeight + "px";
-          }
-        });
-      }
-  document.addEventListener('DOMContentLoaded', function() {
-    const themeToggle = document.querySelector('.theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
+  // Toggle theme manually
+  themeToggle.addEventListener('change', function () {
+    document.body.classList.toggle('dark-theme');
+    document.body.classList.toggle('light-theme');
+    updateIcons();
+  });
 
-    themeToggle.addEventListener('click', function() {
-      document.body.classList.toggle('dark-theme');
-      if (document.body.classList.contains('dark-theme')) {
-        themeIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1268.PNG"; // Path to your moon image
+  // Theme based on time of day
+  function setThemeBasedOnTime() {
+    var hour = new Date().getHours();
+    if (hour >= 6 && hour < 18) {
+      document.body.classList.add('light-theme');
+      document.body.classList.remove('dark-theme');
+      themeToggle.checked = false; // Set switch to light theme
+    } else {
+      document.body.classList.add('dark-theme');
+      document.body.classList.remove('light-theme');
+      themeToggle.checked = true; // Set switch to dark theme
+    }
+    updateIcons();
+  }
+
+  // Call the function to set the theme based on time
+  setThemeBasedOnTime();
+
+  // Accordion functionality
+  var coll = document.getElementsByClassName("collapsible");
+  for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
       } else {
-        themeIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1269.PNG"; // Path to your sun image
+        content.style.maxHeight = content.scrollHeight + "px";
       }
     });
-  });
+  }
+});
     </script>
   </body>
 </html>
