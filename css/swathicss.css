@@ -5,35 +5,64 @@ html {
   font-style: normal;
   margin: 0;
 }
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
 
 body.light-theme {
-  background-color: white;
+  background-color: #f2f0ef;
   color: black;
 }
 
 body.light-theme .story {
+  transition: background-color 0.5s ease, color 0.5s ease;
   color: black;
 }
 
 body.dark-theme {
-  background-color: black;
+  background-color: #181817;
   color: white;
 }
 
 body.dark-theme .story {
+  background-color: #181817
   color: white;
 }
+
+body.dark-theme .collapsible {
+  transition: background-color 0.5s ease, color 0.5s ease;
+  background-color: #f2f0ef;
+  color: black; 
+}
+body.dark-theme .collapsible:hover {
+  background-color: #797877;
+}
+
+body.dark-theme a {
+  color: #78c0ff;
+} 
 
 h5,
 p {
   margin-top: 0;
 }
+.theme-toggle {
+  position: absolute; /* Changed from fixed to absolute */
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.theme-toggle img {
+  width: 100%;
+  height: 100%;
+}
 .mode {
   width: 120px;
   height: 45px;
-  background-color: white;
-  border: 2px solid black;
-  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -42,21 +71,16 @@ p {
   margin: 20px;
 }
 
-.sun,
-.moon {
-  width: 30px;
-  height: 30px;
+.sun, .moon {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px; /* Adjust the margin to move them closer to the switch */
 }
 
 .switch {
-  position: relative; /* Positioned relative to its normal flow inside .mode */
-  width: 60px;
-  height: 34px;
-}
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+  position: relative; 
+  width: 40px; /* Adjusted width */
+  height: 20px; /* Adjusted height */
 }
 
 .slider {
@@ -66,31 +90,33 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #f3e5ab;
+  background-color: black;
   -webkit-transition: 0.6s;
   transition: 0.6s;
+  border-radius: 20px; /* Adjusted border-radius */
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
+  height: 16px; /* Adjusted height */
+  width: 16px; /* Adjusted width */
+  left: 2px; /* Adjusted position */
+  bottom: 2px; /* Adjusted position */
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
+  border-radius: 50%; /* Adjusted border-radius */
 }
 
 input:checked + .slider {
-  background-color: black;
+  background-color: #bfbfbf;
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
+  -webkit-transform: translateX(20px); /* Adjusted translateX */
+  -ms-transform: translateX(20px); /* Adjusted translateX */
+  transform: translateX(20px); /* Adjusted translateX */
 }
 
 /* Rounded sliders */
