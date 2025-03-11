@@ -4,6 +4,7 @@ html {
   font-optical-sizing: auto;
   font-style: normal;
   margin: 0;
+  background-color: #f2f0ef; /* Ensure the default background color is set */
 }
 body {
   transition: background-color 0.5s ease, color 0.5s ease;
@@ -15,7 +16,6 @@ body.light-theme {
 }
 
 body.light-theme .story {
-  transition: background-color 0.5s ease, color 0.5s ease;
   color: black;
 }
 
@@ -25,7 +25,7 @@ body.dark-theme {
 }
 
 body.dark-theme .story {
-  background-color: #181817
+  background-color: #181817;
   color: white;
 }
 
@@ -47,7 +47,7 @@ p {
   margin-top: 0;
 }
 .theme-toggle {
-  position: absolute; /* Changed from fixed to absolute */
+  position: fixed; /* Ensure the icon stays in the corner */
   top: 20px;
   right: 20px;
   width: 30px;
@@ -103,7 +103,7 @@ p {
   width: 16px; /* Adjusted width */
   left: 2px; /* Adjusted position */
   bottom: 2px; /* Adjusted position */
-  background-color: white;
+  background-color: #f2f0ef;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 50%; /* Adjusted border-radius */
