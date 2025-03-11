@@ -224,19 +224,19 @@
           class="links"
         >
           <img
-            src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/linkedin.png"
+            src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/linkedinwhite.PNG"
             class="linkedin"
           />
         </a>
         <a href="https://github.com/swathinator" class="links">
           <img
-            src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/github.png"
+            src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/githubwhite.PNG"
             class="github"
           />
         </a>
         <a href="https://medium.com/@swathitadepalli" class="links">
           <img
-            src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/medium.png"
+            src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/mediumwhite.PNG"
             class="medium"
           />
         </a>
@@ -264,15 +264,20 @@
     }
   }
 
-  // Initial icon update based on the current theme
-  updateIcons();
-
-  // Toggle theme manually
-  themeToggle.addEventListener('change', function () {
+  function toggleTheme() {
     document.body.classList.toggle('dark-theme');
     document.body.classList.toggle('light-theme');
     updateIcons();
-  });
+  }
+
+  // Initial icon update based on the current theme
+  updateIcons();
+
+  // Toggle theme manually with the switch
+  themeToggle.addEventListener('change', toggleTheme);
+
+  // Toggle theme manually with the bottom icon
+  themeIcon.addEventListener('click', toggleTheme);
 
   // Theme based on time of day
   function setThemeBasedOnTime() {
