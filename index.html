@@ -1,205 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Swathi's Website</title>
+    <link href="css/swathicss.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <body>
+    <div class="content">
+      <div class="mode">
+        <img
+          src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1269.PNG"
+          class="sun"
+        />
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle" />
+          <span class="slider round"></span>
+        </label>
+        <img
+          src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1268.PNG"
+          class="moon"
+        />
+      </div>
+      <div class="biodata">
+        <img
+          src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/selfie.jpg"
+          alt="My Selfie"
+          class="profile-image"
+        />
+        <div class="intro">
+          <h1>Swathi Tadepalli</h1>
+          <h3>
+            Cybersecurity Professional |
+            <a href="mailto:swatadepalli@gmail.com" target="_blank"
+              >swatadepalli@gmail.com</a
+            >
+          </h3>
+          <p>Woman in tech with a passion for Cybersecurity!</p>
+          <p>
+            <a
+              href="https://github.com/swathinator/swathinator.github.io/blob/main/Swathi%20Tadepalli.pdf"
+            >
+              <sm>Resume</sm>
+            </a>
+          </p>
+        </div>
+        <div class="row">
+          <div class="col right">
+            <h5>EDUCATION</h5>
+          </div>
+          <div class="col">
+            <p>
+              <t>Bachelor's in Information Systems</t><br />
+              University of Maryland, Baltimore County
+            </p>
+            <p>
+              <t>Master's in Cybersecurity</t><br />
+              University of Maryland, Baltimore County
+            </p>
+          </div>
+        </div>
+        <div class="time">
+          <h3>Here's the time I...</h3>
+          <button class="collapsible">
+            Was featured in Zack Allen’s Detection Engineering Weekly
+          </button>
+          <div class="story">
+            <p>
+              My article,<a
+                href="https://medium.com/@swathitadepalli/improving-windows-logging-visibility-in-elastic-12e2f6996e64"
+                class="link"
+              >
+                “Improving Windows Logging Visibility in Elastic,” </a
+              >was featured in
+              <a
+                href="https://www.detectionengineering.net/p/det-eng-weekly-82-catchy-title-with"
+                class="link"
+                >issue #82 of Detection Engineering Weekly</a
+              >, a newsletter by Zack Allen that highlights developments in
+              Detection Engineering. In the article, I explain how to implement
+              Sysmon to enhance logging visibility within Elastic. I also
+              illustrate how default telemetry often leaves out basic details
+              and how Sysmon can create a more comprehensive view of system
+              activities.
+            </p>
+            <div class="accordianimage">
+              <img
+                src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/deteng.JPG"
+                class="deteng"
+              />
+            </div>
+          </div>
+          <button class="collapsible">
+            Administered a Keylogger attack and detected it in my home lab
+          </button>
+          <div class="story">
+            <p>
+              Keyloggers are a great way to capture sensitive details and
+              provide valuable insights on user behavior. In my
+              <a
+                href="https://medium.com/@swathitadepalli/administering-a-keylogger-attack-part-1-attack-adf67ddcef59"
+                class="link"
+                >Medium article</a
+              >, I explain the steps of deploying a dropper script to download a
+              keylogger, capturing keystrokes, and using an exfiltration script
+              to send captured data to an FTP server. I also cover persistence
+              techniques and conclude with detection methods to identify these
+              activities.
+            </p>
+            <div class="accordianimage">
+              <img
+                src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/keylogger.GIF"
+                class="keylogger"
+              />
+            </div>
+          </div>
+          <button class="collapsible">
+            Got an Atomic Red Team test accepted
+          </button>
+          <div class="story">
+            <p>
+              Atomic Red Team is an open-source library of scripted attack
+              techniques designed to simulate real-world adversary behaviors
+              based on the MITRE ATT&CK framework. I chose to test technique
+              <a href="https://attack.mitre.org/techniques/T1219/"
+                >T1219 - Remote Access Software</a
+              >, by writing a
+              <a
+                href="https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1219/T1219.md#atomic-test-12---rustdesk-files-detected-test-on-windows"
+                >PowerShell command </a
+              >to silently download and install RustDesk, an open-source remote
+              desktop application. (My main motivator being the cool t-shirt!!)
+            </p>
+            <div class="accordianimage">
+              <img
+                src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/atomicredteam.jpg"
+                class="chrome"
+              />
+            </div>
+          </div>
+          <button class="collapsible">Hacked my own Google account</button>
+          <div class="story">
+            <p>
+              In late 2023, Okta experienced a breach in which a malicious actor
+              accessed files for 134 customers by stealing credentials stored on
+              an employee's work laptop. The employee's use of Chrome's password
+              manager, which saves passwords locally and can be easily
+              decrypted, allowed the attacker to gain unauthorized access.
+              Inspired by this incident, I decided to test the attack on my own
+              account by using an
+              <a href="https://github.com/ohyicong/decrypt-chrome-passwords"
+                >open-source Python script</a
+              >
+              to decrypt and display saved credentials in clear text.
+            </p>
+            <div class="accordianimage">
+              <img
+                src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/chrome.JPG"
+                class="chrome"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact">
+        <h3>CONTACT</h3>
+        <p>
+          <t>Email</t><br />
+          <a href="mailto: swatadepalli@gmail.com" target="_blank" class="mail"
+            >swatadepalli@gmail.com</a
+          >
+          <br />
+        </p>
 
+        <p>
+          <sm>Social Links</sm>
+        </p>
 
-	<!-- EDIT: title -->
-	<title>Swathi's Website</title>
-	<!-- Link the main.css stylesheet -->
-	<link href="css/swathicss.css" rel="stylesheet">
+        <a
+          href="https://www.linkedin.com/in/swathi-tadepalli-b821a4190/"
+          class="links"
+        >
+          <img
+            src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/linkedin.png"
+            class="linkedin"
+          />
+        </a>
+        <a href="https://github.com/swathinator" class="links">
+          <img
+            src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/github.png"
+            class="github"
+          />
+        </a>
+        <a href="https://medium.com/@swathitadepalli" class="links">
+          <img
+            src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/medium.png"
+            class="medium"
+          />
+        </a>
+      </div>
+    </div>
+    <script>
+      // Theme based on time of day
+      function setThemeBasedOnTime() {
+        var hour = new Date().getHours();
+        var themeToggle = document.getElementById("theme-toggle");
+        if (hour >= 6 && hour < 18) {
+          document.body.classList.add("light-theme");
+          document.body.classList.remove("dark-theme");
+          themeToggle.checked = false; // Set switch to light theme
+        } else {
+          document.body.classList.add("dark-theme");
+          document.body.classList.remove("light-theme");
+          themeToggle.checked = true; // Set switch to dark theme
+        }
+      }
 
-	<!-- OPTIONAL: Google Fonts (don't forget to edit main.css also) -->
+      // Toggle theme manually
+      document
+        .getElementById("theme-toggle")
+        .addEventListener("change", function () {
+          if (this.checked) {
+            document.body.classList.add("dark-theme");
+            document.body.classList.remove("light-theme");
+          } else {
+            document.body.classList.add("light-theme");
+            document.body.classList.remove("dark-theme");
+          }
+        });
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
-		rel="stylesheet">
+      // Call the function to set the theme
+      setThemeBasedOnTime();
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
 
-</head>
-
-<body>
-
-	<body>
-		<div class="mode">
-			<img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1269.PNG"
-				class="sun">
-
-			<label class="switch">
-				<input type="checkbox">
-				<span class="slider round"></span>
-			</label>
-
-			<img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1268.PNG"
-				class="moon">
-		</div>
-
-		<div class="content">
-			<div class="biodata">
-				<!-- prof pic -->
-
-				<img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/selfie.jpg"
-					alt="My Selfie" class="profile-image">
-
-
-				<!-- intro -->
-				<div class="intro">
-					<!-- name -->
-					<h1>Swathi Tadepalli</h1>
-					<!-- title | email -->
-
-					<h3>Cybersecurity Professional | <a href="mailto:swatadepalli@gmail.com"
-							target="_blank">swatadepalli@gmail.com</a></h3>
-
-					<!-- about -->
-					<p>Woman in tech with a passion for Cybersecurity!</p>
-					<!-- resume -->
-					<p><a
-							href="https://github.com/swathinator/swathinator.github.io/blob/main/Swathi%20Tadepalli.pdf">
-							<sm> Resume</sm>
-						</a></p>
-				</div>
-				<div class="row">
-
-					<div class="col">
-						<h5>EDUCATION</h5>
-					</div>
-
-					<!-- EDIT: education line 1 -->
-					<div class="col">
-						<p>
-							<t>Bachelor's in Information Systems</t><br />
-							University of Maryland, Baltimore County
-						</p>
-						<p>
-							<t>Master's in Cybersecurity</t><br />
-							University of Maryland, Baltimore County
-						</p>
-					</div>
-				</div>
-
-				<div class="time">
-					<h3>Here's the time I...</h3>
-					<button class="collapsible">Was featured in Zack Allen’s Detection Engineering Weekly</button>
-					<div class="story">
-						<p>My article,<a
-								href="https://medium.com/@swathitadepalli/improving-windows-logging-visibility-in-elastic-12e2f6996e64"
-								class="link"> “Improving Windows Logging Visibility in Elastic,” </a>was featured in <a
-								href="https://www.detectionengineering.net/p/det-eng-weekly-82-catchy-title-with"
-								class="link">issue #82 of Detection
-								Engineering Weekly</a>, a newsletter by Zack Allen that highlights developments in
-							Detection Engineering. In
-							the article, I explain how to implement Sysmon to enhance logging visibility within Elastic.
-							I also
-							illustrate how default telemetry often leaves out basic details and how Sysmon can create a
-							more
-							comprehensive view of system activities.</p>
-						<div class="accordianimage">
-							<img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/deteng.JPG"
-								class="deteng">
-						</div>
-					</div>
-					<button class="collapsible">Administered a Keylogger attack and detected it in my home lab</button>
-					<div class="story">
-						<p>Keyloggers are a great way to capture sensitive details and provide valuable insights on user
-							behavior.
-							In my <a
-								href="https://medium.com/@swathitadepalli/administering-a-keylogger-attack-part-1-attack-adf67ddcef59"
-								class="link">Medium article</a>, I explain the steps of deploying a dropper script to
-							download a keylogger,
-							capturing keystrokes, and using an exfiltration script to send captured data to an FTP
-							server. I also
-							cover persistence techniques and conclude with detection methods to identify these
-							activities.</p>
-						<div class="accordianimage">
-							<img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/keylogger.GIF"
-								class="keylogger">
-						</div>
-					</div>
-					<button class="collapsible">Got an Atomic Red Team test accepted</button>
-					<div class="story">
-						<p>Atomic Red Team is an open-source library of scripted attack techniques designed to simulate
-							real-world
-							adversary behaviors based on the MITRE ATT&CK framework. I chose to test technique <a
-								href="https://attack.mitre.org/techniques/T1219/">T1219 - Remote Access
-								Software</a>, by writing a <a
-								href="https://github.com/redcanaryco/atomic-red-team/blob/master/atomics/T1219/T1219.md#atomic-test-12---rustdesk-files-detected-test-on-windows">PowerShell
-								command </a>to silently download and install RustDesk, an open-source
-							remote desktop application. (My main motivator being the cool t-shirt!!)</p>
-						<div class="accordianimage">
-							<img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/atomicredteam.jpg"
-								class="chrome">
-						</div>
-					</div>
-					<button class="collapsible">Hacked my own Google account </button>
-					<div class="story">
-						<p>In late 2023, Okta experienced a breach in which a malicious actor accessed files for 134
-							customers by
-							stealing credentials stored on an employee's work laptop. The employee's use of Chrome's
-							password
-							manager, which saves passwords locally and can be easily decrypted, allowed the attacker to
-							gain
-							unauthorized access. Inspired by this incident, I decided to test the attack on my own
-							account by using
-							an <a href="https://github.com/ohyicong/decrypt-chrome-passwords">open-source Python
-								script</a> to decrypt and display saved credentials in clear text.</p>
-						<div class="accordianimage">
-							<img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/chrome.JPG"
-								class="chrome">
-						</div>
-					</div>
-				</div>
-
-
-			</div>
-			<!--FOOTER DESCRIPTION -->
-			<div class="contact">
-
-				<h3>CONTACT</h3>
-				<!-- EDIT: email -->
-				<p>
-					<t>Email</t><br />
-					<a href="mailto: swatadepalli@gmail.com" target="_blank" class="mail">swatadepalli@gmail.com</a>
-					<br />
-				</p>
-
-				<p>
-					<sm>Social Links</sm>
-				</p>
-
-				<a href="https://www.linkedin.com/in/swathi-tadepalli-b821a4190/" class="links">
-					<img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/linkedin.png"
-						class="linkedin">
-				</a>
-				<a href="https://github.com/swathinator" class="links">
-					<img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/github.png"
-						class="github">
-				</a>
-				<a href="https://medium.com/@swathitadepalli" class="links">
-					<img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/medium.png"
-						class="medium">
-				</a>
-
-			</div>
-		</div>
-		<script>
-			var coll = document.getElementsByClassName("collapsible");
-			var i;
-
-			for (i = 0; i < coll.length; i++) {
-				coll[i].addEventListener("click", function () {
-					this.classList.toggle("active");
-					var content = this.nextElementSibling;
-					if (content.style.maxHeight) {
-						content.style.maxHeight = null;
-					} else {
-						content.style.maxHeight = content.scrollHeight + "px";
-					}
-				});
-			}
-		</script>
-	</body>
-
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.maxHeight) {
+            content.style.maxHeight = null;
+          } else {
+            content.style.maxHeight = content.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+  </body>
 </html>
