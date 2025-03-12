@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Swathi's Website</title>
+    <link href="css/swathicss.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/laptop.PNG">
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="mode">
+        <img id="sun-icon" src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1269.PNG" class="sun" />
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle" />
+          <span class="slider round"></span>
+        </label>
+        <img id="moon-icon" src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1268.PNG" class="moon" />
+      </div>
+      <div class="biodata">
+        <img
+          src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/selfie.jpg"
+          alt="My Selfie"
+          class="profile-image"
+        />
+        <div class="intro">
+          <h1>✨ Swathi Tadepalli ✨</h1>
+          <h3>
+            Cybersecurity Professional |
+            <a href="mailto:swatadepalli@gmail.com" target="_blank">swatadepalli@gmail.com</a>
+          </h3>
+          <p>Woman in tech with a passion for Cybersecurity!</p>
+          <p>
+            <a href="https://github.com/swathinator/swathinator.github.io/blob/main/Swathi%20Tadepalli.pdf">
+              <sm>Resume</sm>
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div id="content" className="content">
+        <Navigation />
+        <div className="resume" id="resume">
+          <div className="business-card">
+            <h1>✨ Aparna Natarajan ✨</h1>
+            <p>Full Stack Developer</p>
+            <HoverImage
+              defaultSrc="/pro-pic-2.jpeg"
+              hoverSrc="/cranberrymuffin.png"
+              alt="Profile Picture"
+            />
+            <p>
+              <a href="/#/portfolio">Portfolio</a> |{' '}
+              <a href="https://www.github.com/cranberrymuffin">GitHub</a> |
+              <a href="https://www.linkedin.com/in/aparna-n-569179335/">
+                LinkedIn
+              </a>
+              <br />
+              aparnalovestocode@gmail.com
+              <br />
+              +1 (917) 301-7943
+            </p>
+          </div>
+          <h2> Summary</h2>
+          <p>
+            Software Engineer with 6+ years of expertise at Meta, Activision, and
+            J.P. Morgan. Proficient in scalable systems, cross-platform solutions,
+            and UI enhancements. Currently at the Recurse Center working on
+            projects available on <a href="/#/portfolio">my portfolio</a>.
+          </p>
+          <h2>Professional Experience</h2>
+          <h3>Meta</h3>
+          <div className="row">
+            <h4 className="role">Software Engineer</h4>
+            <h4 className="date">May 2022 - Dec 2024</h4>
+          </div>
+          <ul>
+            <li>
+              Unlocked independent app updates for 57 apps by designing a
+              version-safe Interface Definition Language (IDL) for
+              application-level interprocess communication (IPC) on embedded
+              Android devices. Developed a Rust library that transpiles IDL
+              declarations into data transfer object stubs.
+            </li>
+            <li>
+              Reduced on-call security workload by 40% by designing and developing
+              a CI pipeline to automate app permission management.
+            </li>
+            <li>
+              Implemented UI updates for the Facebook Android app, aligning with
+              design bets on motion, notifications, post headers, and text
+              truncation within Facebook Design Systems.
+            </li>
+            <li>
+              Led the modernization of Facebook's mobile app iconography by
+              upgrading asset storage, download, and caching infrastructure used
+              across all mobile teams.
+            </li>
+            <li>
+              Managed A/B tests to evaluate design bets, leveraging data-driven
+              insights to drive release decisions on front-end changes that
+              increased app engagement.
+            </li>
+          </ul>
+          <h3>Activision</h3>
+          <div className="row">
+            <h4 className="role">Software Engineer (Part-time)</h4>
+            <h4 className="date">May 2021 - Dec 2021</h4>
+          </div>
+          <ul>
+            <li>
+              Developed and maintained Spring Boot REST APIs to deliver store
+              bundles, personalized recommendations, and schedules to the Call of
+              Duty companion app.
+            </li>
+            <li>
+              Led cloud services migration from AWS to GCP, optimizing APIs to
+              leverage GCP services such as Sharded Redis Cache and Secret
+              Manager, enhancing scalability and security.
+            </li>
+            <li>Implemented cloud-based CI/CD deployment pipelines.</li>
+          </ul>
+          <h3>J.P. Morgan</h3>
+          <div className="row">
+            <h4 className="role">Software Engineer</h4>
+            <h4 className="date">July 2018 - July 2020</h4>
+          </div>
+          <ul>
+            <li>
+              Developed a blue-green deployment pipeline using Cloud Foundry,
+              ensuring 100% service availability during releases.
+            </li>
+            <li>
+              Designed and built live trade execution UI with React and MobX.
+            </li>
+            <li>
+              Created Spring Boot REST API to deliver trading data across teams.
+            </li>
+            <li>
+              Developed a CRUD web application to manage and query trading SQL
+              database.
+            </li>
+            <li>
+              Integrated FIX messaging for communication between an Asset
+              Management trading application and Tradeweb, enabling real-time
+              financial transaction data exchange.
+            </li>
+          </ul>
+          <h2>Education</h2>
+          <p>
+            Masters in Computer Science, Brown University, 2022
+            <br />
+            Bachelors in Computer Science, University of Maryland, 2018
+          </p>
+          <h2>Skills</h2>
+          <p>
+            <strong>Languages:</strong> Java, Kotlin, JavaScript, C++, TypeScript,
+            C#, C, Ruby, Python, R, Scala, OCaml, Prolog, Matlab, GoLang, PHP,
+            bash, PostgreSQL, Rust, CSS
+            <br />
+            <strong>Frameworks:</strong> React, Redux, MobX, Spring Boot, Spring
+            MVC, Angular.js, WPF, GraphQL, Redis, Angular, Vue.js
+            <br />
+            <strong>Other:</strong> Android, Git, Jenkins, Cloud Foundry, AWS,
+            Heroku, GCP, Kubernetes, Kafka, Node
+          </p>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="contact">
+        <h3>CONTACT</h3>
+        <p>
+          <t>Email</t><br />
+          <a href="mailto: swatadepalli@gmail.com" target="_blank" class="mail">swatadepalli@gmail.com</a>
+          <br />
+        </p>
+        <p>
+          <sm>Social Links</sm>
+        </p>
+        <a href="https://www.linkedin.com/in/swathi-t-b821a4190/" class="links">
+          <img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/linkedinwhite.PNG" class="linkedin" />
+        </a>
+        <a href="https://github.com/swathinator" class="links">
+          <img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/githubwhite.PNG" class="github" />
+        </a>
+        <a href="https://medium.com/@swathitadepalli" class="links">
+          <img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/mediumwhite.PNG" class="medium" />
+        </a>
+      </div>
+      <div class="theme-toggle">
+        <img id="theme-icon" src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1269.PNG" alt="Toggle Theme" />
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const themeToggle = document.getElementById('theme-toggle');
+        const sunIcon = document.getElementById('sun-icon');
+        const moonIcon = document.getElementById('moon-icon');
+        const themeIcon = document.getElementById('theme-icon');
+
+        function updateIcons() {
+          if (document.body.classList.contains('dark-theme')) {
+            sunIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/sunwhite.PNG"; // White sun icon for dark mode
+            moonIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/moonwhite.PNG"; // White moon icon for dark mode
+            themeIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1268.PNG"; // Moon image for dark mode
+          } else {
+            sunIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1269.PNG"; // Black sun icon for light mode
+            moonIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1268.PNG"; // Black moon icon for light mode
+            themeIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/IMG_1269.PNG"; // Sun image for light mode
+          }
+        }
+
+        function toggleTheme() {
+          document.body.classList.toggle('dark-theme');
+          document.body.classList.toggle('light-theme');
+          updateIcons();
+        }
+
+        // Initial icon update based on the current theme
+        updateIcons();
+
+        // Toggle theme manually with the switch
+        themeToggle.addEventListener('change', toggleTheme);
+
+        // Toggle theme manually with the bottom icon
+        themeIcon.addEventListener('click', toggleTheme);
+
+        // Theme based on time of day
+        function setThemeBasedOnTime() {
+          var hour = new Date().getHours();
+          if (hour >= 6 && hour < 18) {
+            document.body.classList.add('light-theme');
+            document.body.classList.remove('dark-theme');
+            themeToggle.checked = false; // Set switch to light theme
+          } else {
+            document.body.classList.add('dark-theme');
+            document.body.classList.remove('light-theme');
+            themeToggle.checked = true; // Set switch to dark theme
+          }
+          updateIcons();
+        }
+
+        // Call the function to set the theme based on time
+        setThemeBasedOnTime();
+
+        // Accordion functionality
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
