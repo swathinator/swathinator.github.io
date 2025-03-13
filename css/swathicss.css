@@ -319,3 +319,30 @@ input:checked + .slider:before {
   }
 }
 
+/*--------------RESUME--------------*/
+
+
+.resume {
+  height: max-content;
+  box-sizing: content-box;
+  width: 80vw;
+  max-width: 750px;
+  margin: auto;
+  z-index: 2;
+  overflow-y: auto;
+}
+
+.canvas {
+  position: absolute;
+  z-index: 1;
+}
+
+.rows {
+  font-style: italic;
+}
+
+ul {
+  margin-top: 0;
+  list-style-type: disc;
+}
+
