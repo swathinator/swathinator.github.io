@@ -217,7 +217,7 @@ input:checked + .slider:before {
   color: white;
   cursor: pointer;
   padding: 18px;
-  width: 84%;
+  width: 90%;
   border: none;
   text-align: left;
   outline: none;
@@ -302,17 +302,20 @@ input:checked + .slider:before {
 
 }
 
-.history {
-  width: 650px;
-  margin: 0 auto; /* Center the div horizontally */
-  background-color:#e4e4e4;
+.history, .education {
+  max-width: 90%; /* Keep them the same width */
+  width: 100%; /* Ensure full width within the container */
+  margin: 0 auto; /* Center alignment */
+  background-color: #e4e4e4;
   padding: 30px;
+  box-sizing: border-box; /* Prevents padding from increasing width */
 }
-.education {
-  width: 600px;
-  margin: 0 auto; /* Center the div horizontally */
-  background-color:#e4e4e4;
-  padding: 20px;
-  padding-left: 55px;
-  padding-right: 55px;
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  .history, .education {
+    max-width: 95%; /* Ensures both are the same width */
+    padding: 20px; /* Reduce padding for mobile */
+  }
 }
+
