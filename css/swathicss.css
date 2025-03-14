@@ -157,7 +157,8 @@ input:checked + .slider:before {
 .deteng,
 .chrome,
 .keylogger,
-.atomicredteam {
+.atomicredteam,
+.laptop {
   width: calc(75% - 36px); /* Match the width of .story */
   max-height: 100%; /* Ensure the height fits within the parent container */
   height: auto !important;
