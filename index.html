@@ -44,7 +44,7 @@
           <p>Woman in tech with a passion for Cybersecurity!</p>
           <p>
             <a
-            <a href="resume.html"><sm>Resume</sm></a>
+            href="resume.html"><sm>Resume</sm>
             </a>
           </p>
         </div>
@@ -253,13 +253,13 @@
 
   function updateIcons() {
     if (document.body.classList.contains('dark-theme')) {
-      sunIcon.src = "img/sunwhite.PNG"; // White sun icon for dark mode
-      moonIcon.src = "img/moonwhite.PNG"; // White moon icon for dark mode
-      themeIcon.src = "img/IMG_1268.PNG"; // Moon image for dark mode
+      sunIcon.src = "img/sunwhite.PNG"; 
+      moonIcon.src = "img/moonwhite.PNG"; 
+      themeIcon.src = "img/IMG_1268.PNG"; 
     } else {
-      sunIcon.src = "img/IMG_1269.PNG"; // Black sun icon for light mode
-      moonIcon.src = "img/IMG_1268.PNG"; // Black moon icon for light mode
-      themeIcon.src = "img/IMG_1269.PNG"; // Sun image for light mode
+      sunIcon.src = "img/IMG_1269.PNG"; 
+      moonIcon.src = "img/IMG_1268.PNG"; 
+      themeIcon.src = "img/IMG_1269.PNG"; 
     }
   }
 
@@ -269,31 +269,31 @@
     updateIcons();
   }
 
-  // Initial icon update based on the current theme
+  // icon update based on the current theme
   updateIcons();
 
-  // Toggle theme manually with the switch
+  // Toggle theme with the slider
   themeToggle.addEventListener('change', toggleTheme);
 
-  // Toggle theme manually with the bottom icon
+  // Toggle theme with bottom icon
   themeIcon.addEventListener('click', toggleTheme);
 
-  // Theme based on time of day
+  // Theme for time of day
   function setThemeBasedOnTime() {
     var hour = new Date().getHours();
     if (hour >= 6 && hour < 18) {
       document.body.classList.add('light-theme');
       document.body.classList.remove('dark-theme');
-      themeToggle.checked = false; // Set switch to light theme
+      themeToggle.checked = false; // switch to light theme
     } else {
       document.body.classList.add('dark-theme');
       document.body.classList.remove('light-theme');
-      themeToggle.checked = true; // Set switch to dark theme
+      themeToggle.checked = true; // switch to dark theme
     }
     updateIcons();
   }
 
-  // Call the function to set the theme based on time
+  // theme based on time
   setThemeBasedOnTime();
 
   // Accordion functionality

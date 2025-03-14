@@ -189,11 +189,6 @@
         </div>
       </div>
 
-
-
-
-
-
       <div class="contact">
         <h3>CONTACT</h3>
         <p>
@@ -227,13 +222,13 @@
 
         function updateIcons() {
           if (document.body.classList.contains('dark-theme')) {
-            sunIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/sunwhite.PNG"; // White sun icon for dark mode
-            moonIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/moonwhite.PNG"; // White moon icon for dark mode
-            themeIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/IMG_1268.PNG"; // Moon image for dark mode
+            sunIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/sunwhite.PNG";
+            moonIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/moonwhite.PNG";
+            themeIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/IMG_1268.PNG";
           } else {
-            sunIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/IMG_1269.PNG"; // Black sun icon for light mode
-            moonIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/IMG_1268.PNG"; // Black moon icon for light mode
-            themeIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/IMG_1269.PNG"; // Sun image for light mode
+            sunIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/IMG_1269.PNG";
+            moonIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/IMG_1268.PNG";
+            themeIcon.src = "https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/IMG_1269.PNG";
           }
         }
 
@@ -243,34 +238,28 @@
           updateIcons();
         }
 
-        // Initial icon update based on the current theme
         updateIcons();
 
-        // Toggle theme manually with the switch
         themeToggle.addEventListener('change', toggleTheme);
 
-        // Toggle theme manually with the bottom icon
         themeIcon.addEventListener('click', toggleTheme);
 
-        // Theme based on time of day
         function setThemeBasedOnTime() {
           var hour = new Date().getHours();
           if (hour >= 6 && hour < 18) {
             document.body.classList.add('light-theme');
             document.body.classList.remove('dark-theme');
-            themeToggle.checked = false; // Set switch to light theme
+            themeToggle.checked = false;
           } else {
             document.body.classList.add('dark-theme');
             document.body.classList.remove('light-theme');
-            themeToggle.checked = true; // Set switch to dark theme
+            themeToggle.checked = true;
           }
           updateIcons();
         }
 
-        // Call the function to set the theme based on time
         setThemeBasedOnTime();
 
-        // Accordion functionality
         var coll = document.getElementsByclass("collapsible");
         for (var i = 0; i < coll.length; i++) {
           coll[i].addEventListener("click", function () {

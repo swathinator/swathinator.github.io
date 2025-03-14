@@ -4,8 +4,8 @@ html {
   font-optical-sizing: auto;
   font-style: normal;
   margin: 0;
-  background-color: #f2f0ef; /* Ensure the default background color is set */
-  position: relative; /* Ensure the parent container has position: relative */
+  background-color: #f2f0ef;
+  position: relative;
 }
 
 body {
@@ -34,7 +34,7 @@ body.dark-theme .story {
 body.dark-theme .collapsible {
   transition: background-color 0.5s ease, color 0.5s ease;
   background-color: #f2f0ef;
-  color: black; 
+  color: black;
 }
 
 body.dark-theme .collapsible:hover {
@@ -43,7 +43,7 @@ body.dark-theme .collapsible:hover {
 
 body.dark-theme a {
   color: #78c0ff;
-} 
+}
 body.dark-theme .history,
 body.dark-theme .education {
   background-color: #3b3b3b;
@@ -85,9 +85,9 @@ p {
 }
 
 .switch {
-  position: relative; 
-  width: 40px; /* Adjusted width */
-  height: 20px; /* Adjusted height */
+  position: relative;
+  width: 40px;
+  height: 20px;
 }
 
 .slider {
@@ -100,20 +100,20 @@ p {
   background-color: black;
   -webkit-transition: 0.6s;
   transition: 0.6s;
-  border-radius: 20px; /* Adjusted border-radius */
+  border-radius: 20px;
 }
 
 .slider:before {
   position: absolute;
   content: "";
-  height: 16px; /* Adjusted height */
-  width: 16px; /* Adjusted width */
-  left: 2px; /* Adjusted position */
-  bottom: 2px; /* Adjusted position */
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
   background-color: #f2f0ef;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  border-radius: 50%; /* Adjusted border-radius */
+  border-radius: 50%;
 }
 
 input:checked + .slider {
@@ -121,12 +121,11 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(20px); /* Adjusted translateX */
-  -ms-transform: translateX(20px); /* Adjusted translateX */
-  transform: translateX(20px); /* Adjusted translateX */
+  -webkit-transform: translateX(20px);
+  -ms-transform: translateX(20px);
+  transform: translateX(20px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
@@ -141,12 +140,12 @@ input:checked + .slider:before {
   flex-basis: 100%;
   flex: 1;
   align-items: center;
-  top: 20px; /* This stays the same, because we add margin-top to body */
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 150px; /* Profile picture size */
+  width: 150px;
   height: 150px;
-  border-radius: 50%; /* Makes it round */
+  border-radius: 50%;
   object-fit: cover;
 }
 
@@ -159,10 +158,10 @@ input:checked + .slider:before {
 .keylogger,
 .atomicredteam,
 .laptop {
-  width: calc(75% - 36px); /* Match the width of .story */
-  max-height: 100%; /* Ensure the height fits within the parent container */
+  width: calc(75% - 36px);
+  max-height: 100%;
   height: auto !important;
-  display: inline-block; /* Ensure proper alignment */
+  display: inline-block;
 }
 
 .intro {
@@ -170,27 +169,27 @@ input:checked + .slider:before {
   text-align: center;
   margin-top: 0px;
   display: flex;
-  flex-direction: column; /* Or row, if you want a horizontal layout */
+  flex-direction: column;
   align-items: center;
 }
 
 .row {
   display: flex;
-  justify-content: space-evenly; /* Ensures equal spacing */
-  align-items: flex-start; /* Aligns columns to the top */
+  justify-content: space-evenly;
+  align-items: flex-start;
   width: 100%;
-  padding: 20px; /* Adds padding inside the row container */
-  max-width: 600px; /* Adjust based on your design */
+  padding: 20px;
+  max-width: 600px;
   margin: 0 auto;
-  padding-top: 10px; /* Adds spacing from the resume link */
+  padding-top: 10px;
 }
 
 .col {
   padding-right: 50px;
   display: flex;
-  flex-direction: column; /* Ensures vertical stacking */
-  justify-content: flex-start; /* Aligns text to the top */
-  width: 45%; /* Ensures both columns have equal width */
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 45%;
 }
 
 .contact {
@@ -241,13 +240,12 @@ input:checked + .slider:before {
 
 .story {
   max-height: 0;
-  width: calc(75% - 36px); /* Adjust width to account for padding */
+  width: calc(75% - 36px);
   overflow: hidden;
   transition: max-height 0.4s ease-out, padding-top 0.4s ease-out;
-  padding: 0 18px; /* Add padding around the text */
+  padding: 0 18px;
 }
 
-/* Add padding-top when the collapsible is active */
 .active + .story {
   padding-top: 10px;
 }
@@ -258,7 +256,7 @@ input:checked + .slider:before {
 
 .time {
   display: flex;
-  flex-direction: column; /* Or row, if you want a horizontal layout */
+  flex-direction: column;
   text-align: left;
   align-items: center;
 }
@@ -269,7 +267,7 @@ input:checked + .slider:before {
 
 .content {
   display: flex;
-  flex-direction: column; /* Or row, if you want a horizontal layout */
+  flex-direction: column;
   text-align: left;
   align-items: center;
   width: 100%;
@@ -283,40 +281,38 @@ input:checked + .slider:before {
   float: left;
   text-align: right;
   width: 50%;
-  margin: 0px; 
+  margin: 0px;
+}
 
-}
 .company{
-  margin: 0px; 
+  margin: 0px;
 }
+
 .role {
   float: left;
   width: 50%;
-  margin: 0px; 
-
+  margin: 0px;
 }
 
 .experience {
-  margin: 0 auto; /* Center the div horizontally */
-  text-align: center; /* Center the text inside the div */
-  margin: 0px; 
-
+  margin: 0 auto;
+  text-align: center;
+  margin: 0px;
 }
 
 .history, .education {
-  max-width: 90%; /* Keep them the same width */
-  width: 100%; /* Ensure full width within the container */
-  margin: 0 auto; /* Center alignment */
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
   background-color: #e4e4e4;
   padding: 30px;
-  box-sizing: border-box; /* Prevents padding from increasing width */
+  box-sizing: border-box;
 }
 
-/* Mobile adjustments */
 @media screen and (max-width: 768px) {
   .history, .education {
-    max-width: 95%; /* Ensures both are the same width */
-    padding: 20px; /* Reduce padding for mobile */
+    max-width: 95%;
+    padding: 20px;
   }
 }
 
