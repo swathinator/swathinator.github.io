@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Swathi's Website</title>
+    <link href="css/swathicss.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/laptop.PNG">
+  </head>
+
+  <body>
+    <div class="content">
+      <div class="mode">
+        <img id="sun-icon" src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/IMG_1269.PNG" class="sun" />
+        <label class="switch">
+          <input type="checkbox" id="theme-toggle" />
+          <span class="slider round"></span>
+        </label>
+        <img id="moon-icon" src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/IMG_1268.PNG" class="moon" />
+      </div>
+      <div class="biodata">
+        <img
+          src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/selfie.jpg"
+          alt="My Selfie"
+          class="profile-image"
+        />
+        <div class="intro">
+          <h1>✨ Swathi Tadepalli ✨</h1>
+          <h3>
+            Cybersecurity Professional |
+            <a href="mailto:swatadepalli@gmail.com" target="_blank">swatadepalli@gmail.com</a> | <br />
+                        <a href="https://www.linkedin.com/in/swathi-t-b821a4190/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/swathinator" target="_blank">Github</a> |
+            <a href="https://medium.com/@swathitadepalli" target="_blank">Medium</a>
+          </h3>
+          <p>Woman in tech with a passion for Cybersecurity!</p>
+          <p><b>
+            <a href="index.html"><sm>Home</sm></a> | <a href="resume.html"><sm>Resume</sm></a>
+        </b></p>
+        </div>
+      </div>
+
+      <div id="content">
+        <img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/superduper.JPG" class="superduper"/>
+        <div class="projects">	  
+			<h3 class="experience">💻 <u>Experience</u> 💻</h3>
+			<h3 class="company">Amtrak</h3>
+			  <h4 class="role">Cybersecurity Analyst</h4>
+			  <h4 class="date">September 2023 - May 2024</h4>
+			<ul>
+			  <li>
+				Designed and tuned detections within MS Sentinel, 
+				analyzed security logs for threats, helped implement a 
+				cybersecurity mesh architecture with Zero Trust, and supported 
+				threat intelligence with OSINT and access management.
+			  </li>
+			</ul>  
+			<h3 class="company">IRS</h3>
+			  <h4 class="role">IT Specialist</h4>
+			  <h4 class="date">January 2021 - November 2021</h4>
+			<ul>  
+			  <li>
+				Conducted data mining with SAS, built .NET applications, 
+				ran SQL queries in TOAD to spot discrepancies, and reviewed 
+				IT tax project specs for accuracy.
+			  </li>
+			</ul>  
+			<h3 class="company">GSA</h3>
+			  <h4 class="role">Chief Privacy Office Intern</h4>
+			  <h4 class="date">June 2019 - August 2019</h4>
+			<ul>  
+			  <li>
+				Reviewed privacy assessments, ensured GSA website compliance,
+				 analyzed web traffic with Google Analytics, 
+				 and edited public-use forms with Google App Script.
+			  </li>
+			</ul>
+		</div>
+      </div>
+
+      <div class="contact">
+        <h3>CONTACT</h3>
+        <p>
+          <t>Email</t><br />
+          <a href="mailto: swatadepalli@gmail.com" target="_blank" class="mail">swatadepalli@gmail.com</a>
+          <br />
+        </p>
+        <p>
+          <sm>Social Links</sm>
+        </p>
+        <a href="https://www.linkedin.com/in/swathi-t-b821a4190/" class="links">
+          <img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/linkedinwhite.PNG" class="linkedin" />
+        </a>
+        <a href="https://github.com/swathinator" class="links">
+          <img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/githubwhite.PNG" class="github" />
+        </a>
+        <a href="https://medium.com/@swathitadepalli" class="links">
+          <img src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/mediumwhite.PNG" class="medium" />
+        </a>
+      </div>
+      <div class="theme-toggle">
+        <img id="theme-icon" src="https://raw.githubusercontent.com/swathinator/swathinator.github.io/main/img/IMG_1269.PNG" alt="Toggle Theme" />
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const themeToggle = document.getElementById('theme-toggle');
+        const sunIcon = document.getElementById('sun-icon');
+        const moonIcon = document.getElementById('moon-icon');
+        const themeIcon = document.getElementById('theme-icon');
+      
+        function updateIcons() {
+          if (document.body.classList.contains('dark-theme')) {
+            sunIcon.src = "img/sunwhite.PNG"; 
+            moonIcon.src = "img/moonwhite.PNG"; 
+            themeIcon.src = "img/IMG_1268.PNG"; 
+          } else {
+            sunIcon.src = "img/IMG_1269.PNG"; 
+            moonIcon.src = "img/IMG_1268.PNG"; 
+            themeIcon.src = "img/IMG_1269.PNG"; 
+          }
+        }
+      
+        function toggleTheme() {
+          document.body.classList.toggle('dark-theme');
+          document.body.classList.toggle('light-theme');
+          updateIcons();
+        }
+      
+        // icon update based on the current theme
+        updateIcons();
+      
+        // Toggle theme with the slider
+        themeToggle.addEventListener('change', toggleTheme);
+      
+        // Toggle theme with bottom icon
+        themeIcon.addEventListener('click', toggleTheme);
+      
+        // Theme for time of day
+        function setThemeBasedOnTime() {
+          var hour = new Date().getHours();
+          if (hour >= 6 && hour < 18) {
+            document.body.classList.add('light-theme');
+            document.body.classList.remove('dark-theme');
+            themeToggle.checked = false; // switch to light theme
+          } else {
+            document.body.classList.add('dark-theme');
+            document.body.classList.remove('light-theme');
+            themeToggle.checked = true; // switch to dark theme
+          }
+          updateIcons();
+        }
+      
+        // theme based on time
+        setThemeBasedOnTime();
+      
+        // Accordion functionality
+        var coll = document.getElementsByClassName("collapsible");
+        for (var i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
