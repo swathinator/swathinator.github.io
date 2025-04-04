@@ -368,7 +368,7 @@ ul {
 
 .projectimg {
   display: block; 
-  margin: 0 auto;
-  width: 400px;
+  margin: 0 auto; 
+  max-width: 50%; 
   height: auto; 
 }
