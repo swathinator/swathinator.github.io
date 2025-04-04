@@ -360,15 +360,26 @@ ul {
 }
 
 .superduper {
-  text-align: center;
-  width: 400px;
   padding: 50px;
   padding-top: 10px;
+  display: block; /* Ensures the image behaves like a block element */
+  margin: 0 auto; /* Centers the image horizontally */
+  width: 40vw; /* Sets the width to 40% of the viewport width */
+  max-width: 400px; /* Ensures the image does not exceed 400px */
+  height: auto; /* Maintains the aspect ratio */
 }
 
 .projectimg {
-  display: block; 
-  margin: 0 auto; 
-  max-width: 50%; 
-  height: auto; 
+  display: block; /* Ensures the image behaves like a block element */
+  margin: 0 auto; /* Centers the image horizontally */
+  width: 40vw; /* Sets the width to 40% of the viewport width */
+  max-width: 400px; /* Ensures the image does not exceed 400px */
+  height: auto; /* Maintains the aspect ratio */
+}
+
+@media screen and (max-width: 768px) {
+  .superduper, .projectimg {
+    width: 60vw; /* Adjusts the width for smaller screens */
+    max-width: 300px; /* Ensures the image does not exceed 300px on mobile */
+  }
 }
