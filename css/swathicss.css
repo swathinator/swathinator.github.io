@@ -356,8 +356,19 @@ ul {
   z-index: 2;
   overflow-y: auto;
   padding: 30px;
+  background-color: #e4e4e4;
 }
 
 .superduper {
   text-align: center;
+  width: 400px;
+  padding: 50px;
+  padding-top: 10px;
+}
+
+.projectimg {
+  display: block; 
+  margin: 0 auto;
+  width: 400px;
+  height: auto; 
 }
